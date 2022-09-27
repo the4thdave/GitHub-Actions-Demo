@@ -1,0 +1,24 @@
+{
+  "name": "github-actions-demo",
+  "version": "1.0.0",
+  "description": "A repo to showcase the power of GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the4thdave/GitHub-Actions-Demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the4thdave/GitHub-Actions-Demo/issues"
+  },
+  "homepage": "https://github.com/the4thdave/GitHub-Actions-Demo#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.1.0"
+  }
+}
