@@ -6,9 +6,12 @@ A repo to showcase the power of GitHub Actions
 
 To get started with GitHub Actions, follow these steps:
 
-1. Install `act` by using `brew install act` on Mac (link to install for Windows)[https://github.com/nektos/act#installation-through-package-managers]
+1. Install `act` by using `brew install act` on Mac [or click here for Windows install](https://github.com/nektos/act#installation-through-package-managers)
 
-2. Install `docker` (Mac)[https://docs.docker.com/desktop/install/mac-install/] (Windows)[https://docs.docker.com/docker-for-windows/install/] (Linux)[https://docs.docker.com/engine/install/]
+2. Install `docker` 
+- [Mac](https://docs.docker.com/desktop/install/mac-install/) 
+- [Windows](https://docs.docker.com/docker-for-windows/install/) 
+- [Linux](https://docs.docker.com/engine/install/)
 
 3. Run `act` in your terminal.
 
