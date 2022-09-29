@@ -1,5 +1,9 @@
 name: 'Pull Request Validation'
 description: 'Get swagger doc, call spec validator and comment JSON'
+inputs:
+  files-changed: 
+    description: 'Files changed in pull request'
+    required: true
 outputs:
   raw_url:
     description: 'The url to get raw swagger doc'
