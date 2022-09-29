@@ -1,12 +1,30 @@
 name: Pull Request Validation
-
 on: [pull_request, workflow_dispatch]
-
 jobs:
-  validate:
+  validate_spec:
     runs-on: ubuntu-latest
+    name: Validate spec in Pull Request
     steps:
-      - uses: actions/checkout@v3
-      - name: Pull Request Validation
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+        
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v31
+
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
+      - name: Validate spec in pull request
+        id: validate
         uses: ./
-        id: pr-validator
+        with:
+          files-changed: ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Print url
+        run: echo "${{ steps.validate.outputs.raw_url }}"

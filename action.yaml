@@ -1,5 +1,8 @@
 name: 'Pull Request Validation'
 description: 'Get swagger doc, call spec validator and comment JSON'
+outputs:
+  raw_url:
+    description: 'The url to get raw swagger doc'
 runs:
   using: 'node16'
   main: 'src/index.js'
