@@ -1,0 +1,11 @@
+apiVersion: backstage
+kind: API
+metadata:
+  name: Test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: test owner
+  definition:
+    $text: https://github.gapinc.com/test/test-spec.yaml
+    
